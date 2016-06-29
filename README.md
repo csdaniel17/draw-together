@@ -8,10 +8,6 @@
 * Canvas
 * JavaScript
 * jQuery
-* AngularJS
-* Nodejs
+* Node.js
 * Express
 * Socket.io
-
-
-### Url to live demo
