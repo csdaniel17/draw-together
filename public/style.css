@@ -45,5 +45,8 @@ body {
 
 .linesize, .reset {
   background-color: gray;
-  text-align: center;
+}
+
+#eraser {
+  background-color: white;
 }

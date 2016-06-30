@@ -5,9 +5,9 @@ var io = require('socket.io')(server);
 
 app.use(express.static('public'));
 
-io.on('connection', function(clientSocket) {
+io.on('connection', function(socket) {
 
-  clientSocket.on('draw', function(coords) {
+  socket.on('draw', function(coords) {
     io.emit('draw', coords);
     // console.log(coords);
   });
