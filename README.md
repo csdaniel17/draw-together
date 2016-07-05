@@ -16,6 +16,13 @@
 * Socket.io
 
 
+### NPMs to install
+
+` npm install express --save
+  npm install socket-io --save
+`
+
+
 ### Url to live demo
 
 [Check it out](https://draw-together-fchckyjitc.now.sh/)
