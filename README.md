@@ -18,8 +18,10 @@
 
 ### NPMs to install
 
-`npm install express --save`
-`npm install socket-io --save`
+```node
+$ npm install express --save
+$ npm install socket-io --save
+```
 
 
 
