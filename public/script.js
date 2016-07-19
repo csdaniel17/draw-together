@@ -47,10 +47,6 @@ $('#thickness4').click(function() {
   thickness = 15;
 });
 
-$('#reset').click(function() {
-  ctx.fillStyle = 'white';
-  ctx.fillRect(0, 0, 700, 700);
-});
 
 function drawLine(x1, y1, x2, y2, color, thickness) {
   ctx.strokeStyle = color;
@@ -78,6 +74,18 @@ $('canvas').mouseup(function(event){
 
 socket.on('draw', function(line) {
   drawLine(line.x1, line.y1, line.x2, line.y2, line.color, line.thickness);
+});
+
+// click reset to emit the reset function to the server
+$('#reset').click(function() {
+  socket.emit('reset', function() {
+  });
+});
+
+// on reset fill canvas with white
+socket.on('reset', function() {
+  ctx.fillStyle = 'white';
+  ctx.fillRect(0, 0, 700, 700);
 });
 
 $('canvas').mousemove(function(event) {

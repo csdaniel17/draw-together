@@ -12,6 +12,11 @@ io.on('connection', function(socket) {
     // console.log(coords);
   });
 
+  socket.on('reset', function() {
+    // broadcast reset so every user gets a reset board
+    io.emit('reset');
+  })
+
 });
 
 server.listen(3000, function() {
