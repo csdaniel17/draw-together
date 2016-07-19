@@ -27,4 +27,4 @@ $ npm install socket.io --save
 
 ### Url to live demo
 
-[Check it out](https://draw-together-fchckyjitc.now.sh/)
+[Check it out](https://draw-together-duhowphuwa.now.sh/)
